@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PostAPI.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a343f0bbd36bd7dbfcc05a98087a1d67e7c1435")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+077bdc4fd7b3cf3c0b5095c0374808f14d9979a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PostAPI.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PostAPI.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
