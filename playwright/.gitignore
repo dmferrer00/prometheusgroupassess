@@ -1,0 +1,22 @@
+# Visual Studio and .NET files
+.vs/
+.vscode/
+bin/
+obj/
+
+# Playwright files
+**/.playwright/
+playwright.ps1
+
+# Package Manager files
+packages/
+
+# Project files
+*.user
+*.suo
+*.sln.docstates
+*.dll
+*.exe
+*.pdb
+*.tmp
+*.csproj.user
