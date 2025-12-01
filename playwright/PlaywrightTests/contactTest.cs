@@ -60,11 +60,10 @@ public class Tests
         }
 
         //disperse promotional popup
-        await page.PauseAsync(); 
         try
         {
             Console.WriteLine("Attempting to close pop-up...");
-            await page.GetByRole(AriaRole.Button, new() { Name = "Close" }).ClickAsync(new() { Timeout = 5000 });
+            await page.Locator("[data-test-id=\"interactive-frame\"]").ContentFrame.GetByRole(AriaRole.Button, new() { Name = "Close" }).ClickAsync(new() { Timeout = 10000 });
             Console.WriteLine("Pop-Up closed.");
         }
         catch (Exception)
@@ -79,7 +78,6 @@ public class Tests
         //Verify invalid fields >= 4
         var invalidFieldsCount = await page.Locator(".hs-input.invalid.error").CountAsync();
         Console.WriteLine($"Found {invalidFieldsCount} invalid fields.");
-        await page.PauseAsync();
         Assert.That(invalidFieldsCount, Is.GreaterThanOrEqualTo(4), $"Expected to find 4 or more invalid fields, but found {invalidFieldsCount}.");
 
     }
